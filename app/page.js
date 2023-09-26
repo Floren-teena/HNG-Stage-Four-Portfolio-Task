@@ -1,113 +1,139 @@
-import Image from 'next/image'
+import Head from "next/head";
+import {
+  AiFillLinkedin,
+  AiFillGithub,
+  AiFillTwitterCircle,
+} from "react-icons/ai";
+import Project1 from "../public/tina-interiors-image-gallery.png";
+import Project2 from "../public/flos-movies-app.png";
+import Project3 from "../public/slack-profile.png";
+import Project4 from "../public/tina-interiors.png";
+import Project5 from "../public/order-summary.png";
+import Project6 from "../public/nft-preview.png";
+import Project7 from "../public/single-price-grid.png";
+import Project8 from "../public/signup-form.png";
+import Project9 from "../public/qr-code.png";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+    <div>
+      <Head>
+        <title>Florentina Antigha Portfolio</title>
+        <meta name="description" content="Portfolio Project" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Mooli&family=Ubuntu:wght@300;400;500;700&display=swap"
+          rel="stylesheet"
         />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+      </Head>
+      <main className=" bg-white md:px-20 lg:px-40">
+        <section className="min-h-screen">
+          <nav className=" pt-10 pb-6 mb-12 flex justify-between px-10">
+            <h1 className=" text-2xl font-Mooli">DEVELOPEDBYFLORENTEENA</h1>
+            <ul className=" flex items-center">
+              <li>
+                <a
+                  className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+                  href="#"
+                >
+                  Email
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div className=" text-center p-10 leading-10">
+            <h2 className=" text-5xl pb-8 text-teal-600 font-medium md:text-6xl">
+              Florentina Antigha
+            </h2>
+            <h3 className=" text-2xl pt-2 pb-4 text-gray-800 font-semibold md:text-3xl">
+              Web Developer, Coding Instructor and DevOps Engineer.
+            </h3>
+            <p className=" text-md pt-5 pb-5 text-gray-800 md:text-xl max-w-xl mx-auto">
+              I am a passionate Freelancer, providing services for Website
+              development, DevOps and Teaching programming.
+            </p>
+          </div>
+          <div className=" text-5xl flex justify-center gap-16 text-gray-800 pb-24">
+            <AiFillGithub />
+            <AiFillLinkedin />
+            <AiFillTwitterCircle />
+          </div>
+          <div className="px-10 pb-10">
+            <div className=" bg-slate-900 pt-20 pb-20 rounded-3xl">
+              <h3 className=" text-4xl pb-4 text-teal-600 text-center">
+                Services I Offer
+              </h3>
+              <p className=" text-md py-2 leading-8 text-white px-10 text-center">
+                Since the beginning of my journey as a freelance frontend
+                developer, coding insructor for kids and DevOps enthusiaist, I
+                have worked and interned in several{" "}
+                <span className=" text-teal-500">startups</span> and reputable{" "}
+                <span className=" text-teal-500">agencies</span>, and
+                collaborated with talented people to create amazing websites,
+                automate and deploy softwares and introduced the concept of
+                programming to some of the next generation programmers in a fun
+                and exciting manner.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section className="px-10">
+          <div>
+            <h3 className=" text-4xl pt-10 pb-5 text-teal-600 text-center">Portfolio</h3>
+            <h4 className=" text-xl text-gray-800 pb-3 text-center">
+              Here are some of my recent projects that showcase my skills and
+              passion for web development:
+            </h4>
+          </div>
+          <div className=" flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+            <div className=" basis-1/3 flex-1">
+              <a href="https://tinainteriorsimagegallery.vercel.app/gallery" target="_blank">
+              <Image src={Project1} className=" rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive"/>
+              </a>
+            </div>
+            <div className=" basis-1/3 flex-1">
+              <a href="https://flosmovieapp.vercel.app/" target="_blank">
+              <Image src={Project2} className=" rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive"/>
+              </a>
+            </div>
+            <div className=" basis-1/3 flex-1">
+              <a href="https://frontend-track-stage-one-task.vercel.app/" target="_blank">
+              <Image src={Project3} className=" rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive"/>
+              </a>
+            </div>
+            <div className=" basis-1/3 flex-1">
+              <a href="https://tina-interiors.vercel.app/" target="_blank">
+              <Image src={Project4} className=" rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive"/>
+              </a>
+            </div>
+            <div className=" basis-1/3 flex-1">
+              <a href="https://order-summary-subscription.vercel.app/" target="_blank">
+              <Image src={Project5} className=" rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive"/>
+              </a>
+            </div>
+            <div className=" basis-1/3 flex-1">
+              <a href="https://nft-preview-card-project.vercel.app/" target="_blank">
+              <Image src={Project6} className=" rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive"/>
+              </a>
+            </div>
+            <div className=" basis-1/3 flex-1">
+              <a href="https://single-price-grid-by-florenteena.vercel.app/" target="_blank">
+              <Image src={Project7} className=" rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive"/>
+              </a>
+            </div>
+            <div className=" basis-1/3 flex-1">
+              <a href="https://intro-component-with-signup-form-by-florenteena.vercel.app/" target="_blank">
+              <Image src={Project8} className=" rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive"/>
+              </a>
+            </div>
+            <div className="lg:m-auto">
+              <a href="https://qr-code-component-by-florenteena.vercel.app/" target="_blank">
+              <Image src={Project9} className=" rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive"/>
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  );
 }
